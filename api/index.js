@@ -98,8 +98,12 @@ const express = require('express');
 const cors = require('cors');
 const { GoogleGenAI } = require("@google/genai");
 
+// const ai = new GoogleGenAI({
+//   apiKey: process.env.GEMINI_API_KEY
+// });
+
 const ai = new GoogleGenAI({
-  apiKey: process.env.GEMINI_API_KEY
+  apiKey: "AIzaSyAQpEBb62U_5znrQRhEKYWKFPDIyHYFCd8"
 });
 
 
