@@ -102,9 +102,14 @@ const { GoogleGenAI } = require("@google/genai");
 //   apiKey: process.env.GEMINI_API_KEY
 // });
 
+// const ai = new GoogleGenAI({
+//   apiKey: "AIzaSyAQpEBb62U_5znrQRhEKYWKFPDIyHYFCd8"
+// });
+
 const ai = new GoogleGenAI({
-  apiKey: "AIzaSyAQpEBb62U_5znrQRhEKYWKFPDIyHYFCd8"
+  apiKey: process.env.GEMINI_API_KEY
 });
+
 
 
 const app = express();
